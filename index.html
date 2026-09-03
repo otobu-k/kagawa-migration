@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>東京23区から香川へ｜40代からの職住近接・子育て移住相談室</title>
-    <meta name="description" content="都心で子育てに励む30〜40代・世帯年収800万円以上のファミリーへ。100坪以上×断熱等級7の平屋×香川移住を果たした経験者が明かすリアルな暮らし。">
+    <meta name="description" content="都心で子育てに励む30〜40代・世帯年収800万円以上のファミリーへ。東京の仕事を維持しながら、香川で家族の暮らしを再設計した実体験をもとに寄り添う無料相談室。">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
         {
           "@type": "WebSite",
           "name": "香川子育て移住相談室",
+          "url": "https://tokyo-exit.com/",
           "description": "東京からの移住経験者が語る、100坪以上×断熱等級7×フルリモートの香川移住"
         },
         {
@@ -26,10 +27,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "東京の仕事を維持したままフルリモートで香川移住できますか？",
+              "name": "東京の収入水準を維持したまま移住できますか？",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "はい、可能です。IT・コンサル・本部職種などを中心に、東京水準の年収を維持したまま移住を実現するノウハウをお伝えします。"
+                "text": "私の場合は、東京企業のフルリモート勤務を維持することで実現しました。職種や条件に合わせた具体的なアプローチを個別相談でお伝えしています。"
               }
             }
           ]
@@ -61,7 +62,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* ヒーローセクション */
+        /* ① ヒーローセクション */
         .hero {
             position: relative;
             background: linear-gradient(180deg, rgba(0, 160, 233, 0.85), rgba(0, 119, 182, 0.9)), url('header_theme.jpg') center/cover no-repeat;
@@ -119,7 +120,7 @@
             flex-wrap: wrap;
             gap: 10px;
             max-width: 680px;
-            margin: 0 auto;
+            margin: 0 auto 25px;
         }
         .hero-tag {
             background: rgba(255, 255, 255, 0.25);
@@ -131,6 +132,22 @@
             color: #ffffff;
             font-weight: 700;
         }
+
+        .hero-cta-btn {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: #fff;
+            font-weight: 900;
+            font-size: 1.1rem;
+            padding: 16px 36px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(255, 159, 28, 0.4);
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .hero-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 159, 28, 0.5); }
 
         .container {
             max-width: 880px;
@@ -176,7 +193,7 @@
             display: block;
         }
 
-        /* プロフィール */
+        /* ② プロフィール */
         .profile-flex {
             display: flex;
             align-items: center;
@@ -205,7 +222,7 @@
             font-weight: 700;
         }
 
-        /* 対比テーブル */
+        /* ③ 対比テーブル */
         .table-wrapper {
             overflow-x: auto;
             margin-top: 15px;
@@ -236,7 +253,7 @@
         .compare-table td.tokyo-col { background-color: #ffffff; color: #666; width: 40%; text-align: left; }
         .compare-table td.kagawa-col { background-color: #eef8fc; color: var(--sky-blue-dark); font-weight: 700; width: 40%; text-align: left; }
 
-        /* 診断セクション */
+        /* ⑤ 診断セクション */
         .checklist { list-style: none; display: grid; gap: 12px; }
         .check-label {
             display: flex; align-items: flex-start; gap: 12px; background: #f7fcfe; padding: 16px;
@@ -266,14 +283,43 @@
             text-align: left;
         }
 
-        /* FAQ */
+        /* ⑧ カテゴリーカードナビ */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .category-card {
+            background: #f7fcfe;
+            border: 2px solid var(--border-dashed);
+            border-radius: 16px;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .category-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--sky-blue);
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0,160,233,0.12);
+        }
+        .category-icon { font-size: 1.8rem; margin-bottom: 8px; }
+        .category-title { font-weight: 700; font-size: 1.05rem; color: var(--ocean-navy); margin-bottom: 6px; }
+        .category-desc { font-size: 0.85rem; color: #666; line-height: 1.5; }
+
+        /* ⑨ FAQ */
         .faq-list { display: grid; gap: 16px; }
         .faq-item { border: 2px dashed var(--border-dashed); border-radius: 16px; padding: 20px; background: #fff; }
         .faq-q { font-weight: 700; color: var(--sky-blue-dark); display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 1.05rem; }
         .faq-q-badge { background: var(--sky-blue); color: #fff; font-size: 0.85rem; padding: 2px 10px; border-radius: 50px; }
         .faq-a { font-size: 0.93rem; color: #555; line-height: 1.8; padding-left: 40px; }
 
-        /* noteカード */
+        /* ⑩ noteカード */
         .note-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 20px; }
         .note-card {
             background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 22px;
@@ -293,7 +339,7 @@
         }
         .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0, 160, 233, 0.45); }
 
-        /* モーダルフォーム */
+        /* モーダル共通スタイル */
         .modal-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(43, 62, 74, 0.7); backdrop-filter: blur(5px);
@@ -312,7 +358,7 @@
         }
         .form-group { margin-bottom: 16px; text-align: left; }
         .form-group label { display: block; font-weight: bold; margin-bottom: 6px; font-size: 0.88rem; }
-        .form-control { width: 100%; padding: 11px 14px; border: 2px solid var(--border-dashed); border-radius: 12px; font-size: 0.95rem; background: #f7fcfe; }
+        .form-control { width: 100%; padding: 11px 14px; border: 2px solid var(--border-dashed); border-radius: 12px; font-size: 0.95rem; background: #f7fcfe; font-family: inherit; }
         
         .chip-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
         .chip {
@@ -322,23 +368,26 @@
         .chip.active { background: var(--sky-blue); color: #fff; border-color: var(--sky-blue); }
 
         footer { text-align: center; padding: 40px 20px; font-size: 0.85rem; color: #777; }
+        footer a { color: #666; text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <!-- ヒーローセクション -->
+    <!-- ① HERO（ファーストビュー） -->
     <header class="hero">
         <span class="hero-badge">都心で子育てに励む、30〜40代・世帯年収800万円以上のあなたへ</span>
         <h1>東京での子育てと住まいに限界を感じたら。<br>40代からの「香川・職住近接ライフ」</h1>
         <p class="hero-sub">
-            <span class="inline-block-text">フルリモート勤務を活かし、</span><span class="inline-block-text">100坪以上の土地と気密・断熱にこだわった高性能住宅を獲得。</span><br>
-            <span class="inline-block-text">現実的な「家族の豊かな生き方」を叶えた</span><span class="inline-block-text">実体験相談室。</span>
+            <span class="inline-block-text">東京の仕事を維持しながら、</span><span class="inline-block-text">香川で家族の暮らしを再設計した実体験相談室。</span>
         </p>
         <div class="hero-tags">
             <span class="hero-tag">🌲 100坪以上の広大な敷地</span>
             <span class="hero-tag">🏡 断熱等級7の快適住宅</span>
             <span class="hero-tag">💻 完全フルリモート維持</span>
             <span class="hero-tag">👦 伸び伸び自然派子育て</span>
+        </div>
+        <div>
+            <button class="hero-cta-btn" onclick="openModal()">まだ移住を決めていない方も、無料で壁打ちしてみる</button>
         </div>
 
         <div class="hero-wave">
@@ -350,7 +399,7 @@
 
     <div class="container">
         
-        <!-- プロフィールセクション -->
+        <!-- ② 私はこんな人です（プロフィール＆相談室の趣旨） -->
         <section class="card">
             <div class="profile-flex">
                 <div class="profile-img-container">
@@ -358,14 +407,17 @@
                 </div>
                 <div class="profile-body">
                     <h3>アドバイザー：香川移住×高性能住宅の実践者</h3>
-                    <p style="font-size: 0.93rem; color: #555;">
+                    <p style="font-size: 0.93rem; color: #555; margin-bottom: 12px;">
                         東京で長年勤務した後、40代で香川県へ移住。200坪の土地を購入し、断熱等級7・高気密高断熱の平屋を新築。東京の会社でフルリモート勤務を継続しながら、家庭菜園や自然豊かな環境で子育てを実践中。
+                    </p>
+                    <p style="font-size: 0.9rem; color: var(--sky-blue-dark); font-weight: bold; background: #eef8fc; padding: 12px; border-radius: 10px; border-left: 4px solid var(--sky-blue);">
+                        💡 私自身、移住前には「仕事」「土地」「住宅」「子育て」「家族の合意」をひとつずつ手探りで悩みました。そのリアルな経験を、これから移住を考える方の「壁打ち相手」として役立てています。
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- 対比テーブルセクション -->
+        <!-- ③ 東京と香川、暮らしはどう変わった？（要約比較表） -->
         <section class="card">
             <div class="section-header-blue">
                 <h2>東京での暮らし vs 香川でのリアル</h2>
@@ -413,15 +465,42 @@
                     </tbody>
                 </table>
             </div>
+
+            <!-- 20選への導線 -->
+            <a href="comparison/" style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: var(--sky-blue-dark); text-decoration: none; font-size: 0.95rem;">
+                👉 実際に感じた「暮らしの違い20選」の完全版を見る ↗
+            </a>
         </section>
 
-        <!-- 診断セクション -->
+        <!-- ④ ただし、移住すれば人生が自動的に変わるわけではありません（移住の盲点・リアル） -->
         <section class="card">
             <div class="section-header-blue">
-                <h2>リアルタイム 香川移住適性診断</h2>
+                <h2>移住1年目で気づいた「リアルな盲点」</h2>
                 <svg class="wave-line" viewBox="0 0 100 20"><path d="M0 10 Q25 0, 50 10 T100 10" fill="none" stroke="#ffffff" stroke-width="3"/></svg>
             </div>
-            <p style="margin-bottom: 22px; font-size: 0.93rem; color: #666; text-align: center;">該当項目にチェックを入れると、その場で移住適性度とアドバイスが表示されます。</p>
+            
+            <div style="font-size: 0.93rem; color: #444; line-height: 1.85;">
+                <p style="margin-bottom: 15px;">
+                    「地方へ行けば、勝手に豊かな人生が手に入る」——私自身、最初はそう思っていました。<br>
+                    しかし、香川へ移住して1年が経った頃、ある明確な事実に行き当たります。
+                </p>
+                <div style="background: #f7fcfe; border-left: 4px solid var(--sky-blue); padding: 18px; border-radius: 8px; margin-bottom: 15px; font-weight: 500;">
+                    東京から四国へ場所を変えても、子どもたちは放置すればYouTubeやゲームをする。<br>
+                    「住む場所を変えること」と「暮らし方を変えること」は、全く別の問題だったのです。
+                </div>
+                <p>
+                    単に『便利さを消費する暮らし』のまま場所だけ変えても意味がありません。だからこそ、土地・住宅・庭・働き方までを含めて「自分たちの暮らしを根本から再設計」する必要がありました。当相談室では、そうした失敗や盲点も含めたリアルな体験をお話ししています。
+                </p>
+            </div>
+        </section>
+
+        <!-- ⑤ 香川移住との相性チェック（診断） -->
+        <section class="card">
+            <div class="section-header-blue">
+                <h2>香川移住との相性チェック</h2>
+                <svg class="wave-line" viewBox="0 0 100 20"><path d="M0 10 Q25 0, 50 10 T100 10" fill="none" stroke="#ffffff" stroke-width="3"/></svg>
+            </div>
+            <p style="margin-bottom: 22px; font-size: 0.93rem; color: #666; text-align: center;">該当項目にチェックを入れると、あなたと香川移住の相性と「次に確認すべきポイント」が表示されます。</p>
 
             <form id="diagForm">
                 <ul class="checklist">
@@ -434,137 +513,109 @@
             </form>
 
             <div class="result-panel">
-                <div style="font-size:0.92rem; color:#666;">あなたの香川移住適性度</div>
+                <div style="font-size:0.92rem; color:#666;">あなたの「香川移住との相性度」</div>
                 <div class="score-num"><span id="scoreText">0</span>%</div>
                 <div class="gauge-bar-bg"><div class="gauge-bar-fill" id="gaugeFill"></div></div>
                 <div class="advice-box" id="adviceText">チェック項目を選択してください。選択の組み合わせに応じたアドバイスが表示されます。</div>
             </div>
 
-            <div class="consultation-note">
-                💡 <strong>無料オンライン相談について</strong><br>
-                「香川へ移住したいけれど、何から考えればいいかわからない」という段階でも大丈夫です。住まい・土地・仕事・子育て・家族の合意など、気になることを何でもお聞かせください。実体験をもとに、一緒に整理いたします。少しでも自分の経験を、誰かの役に立てて頂くための無料相談(ボランティア)です。売り込み行為などは一切ありません。
-            </div>
-
-            <button class="cta-btn" onclick="openModal()">無料の個別オンライン相談を予約する</button>
+            <button class="cta-btn" onclick="openModal()">相性チェックの結果をもとに壁打ちしてみる</button>
         </section>
 
-        <!-- 自治体補助金・公的サポートリンク集 -->
+        <!-- ⑥ こんな悩みを相談できます（無料相談の強化） -->
         <section class="card">
             <div class="section-header-blue">
-                <h2>公的支援・移住ポータルポータル</h2>
+                <h2>こんな疑問・お悩みを個別で整理できます</h2>
                 <svg class="wave-line" viewBox="0 0 100 20"><path d="M0 10 Q25 0, 50 10 T100 10" fill="none" stroke="#ffffff" stroke-width="3"/></svg>
             </div>
-            <p style="font-size: 0.93rem; color: #666; text-align: center; margin-bottom: 25px;">
-                東京圏からの移住では、条件を満たすことで最大数百万規模の公的補助を受けることが可能です。<br>
-                自治体や各種ポータルサイトの公式情報一覧です。
-            </p>
-
-            <div style="display: grid; gap: 16px;">
-                <!-- 移住支援金 -->
-                <a href="https://www.pref.kagawa.lg.jp/chiiki/iju/izyusienkin.html" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: #ff9f1c; color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">最大100万円支給</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">香川県公式 ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">東京圏移住支援事業補助金（県内全17市町対象）</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            東京23区に在住または通勤していた方が香川県内へ移住し、テレワークや指定企業への就職・起業等を行う場合に支給されます。（世帯100万円＋18歳未満の子供1人につき最大100万円加算）
-                        </p>
-                    </div>
-                </a>
-
-                <!-- かがわ暮らし -->
-                <a href="https://www.kagawalife.jp/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: var(--sky-blue); color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">県公式総合ポータル</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">かがわ暮らし ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">香川県移住ポータルサイト「かがわ暮らし」</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            香川県内の全17市町の地域特徴、お試し住宅情報、子育て環境、各市町独自の住宅取得支援制度などを一通り比較・検索できる県公式の情報ハブサイトです。
-                        </p>
-                    </div>
-                </a>
-
-                <!-- 応援割引 -->
-                <a href="https://www.kagawalife.jp/support/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: var(--sky-blue); color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">下見・引っ越し優遇</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">優待カード発行 ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">かがわ暮らし応援割引制度</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            移住検討中の方へ。現地での土地探し・物件視察時のレンタカー料金20%割引や、引っ越し基本料金の割引などが受けられます。
-                        </p>
-                    </div>
-                </a>
-
-                <!-- カラフルかがわ -->
-                <a href="https://kagawa-colorful.com/immigration" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: var(--sky-blue); color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">ライフスタイルWeb</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">カラフルかがわ ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">カラフルかがわ 移住・定住情報ポータル</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            香川での暮らしのリアルな魅力や文化、先輩移住者のインタビュー記事など、移住後の豊かなライフスタイルをイメージできる総合情報WEBメディアです。
-                        </p>
-                    </div>
-                </a>
-
-                <!-- SMOUT（香川県） -->
-                <a href="https://smout.jp/prefectures/37/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: var(--sky-blue); color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">地域とつながる</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">SMOUT香川 ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">移住スカウトサービス SMOUT（香川県ページ）</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            香川県内の自治体や地域キーマンから直接スカウトやイベント案内が届く地域プラットフォーム。お試し移住体験イベントや関わり方情報をチェックできます。
-                        </p>
-                    </div>
-                </a>
-
-                <!-- 丸亀市 移住ポータル -->
-                <a href="https://www.city.marugame.lg.jp/page/13526.html" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: var(--sky-blue); color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">自治体公式ポータル</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">丸亀市公式 ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">丸亀市 移住・定住ポータルサイト</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            中讃エリアの中心都市として高い利便性と豊かな自然を併せ持つ丸亀市。住まい取得奨励金や子育て世帯向け支援施策など、丸亀での暮らしの情報を網羅しています。
-                        </p>
-                    </div>
-                </a>
-
-                <!-- デュアルライフマガジン -->
-                <a href="https://dual-life-iju.com/magazine/category/dual/recommend_kagawa/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-                    <div style="background: #f7fcfe; border: 2px solid var(--border-dashed); border-radius: 16px; padding: 20px; transition: all 0.2s ease;" onmouseover="this.style.borderColor='var(--sky-blue)'; this.style.background='#fff';" onmouseout="this.style.borderColor='var(--border-dashed)'; this.style.background='#f7fcfe';">
-                        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-                            <span style="background: var(--sky-blue); color: #fff; font-size: 0.78rem; font-weight: bold; padding: 3px 12px; border-radius: 50px;">移住マガジン</span>
-                            <span style="font-size: 0.82rem; color: var(--sky-blue-dark); font-weight: bold;">Dual Life IJU ↗</span>
-                        </div>
-                        <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--ocean-navy); margin-bottom: 6px;">Dual Life IJU 香川移住おすすめ特集</h3>
-                        <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
-                            2拠点生活や地方移住に特化した専門Webマガジン。都市部から香川県へ移住・デュアルライフを実践している方のリアルな暮らしやおすすめエリアの紹介が満載です。
-                        </p>
-                    </div>
-                </a>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                <div style="background: #f7fcfe; border: 1.5px solid var(--border-dashed); padding: 15px; border-radius: 12px; font-size: 0.88rem;">
+                    💼 <strong>仕事・年収・リモート</strong><br><span style="color:#666;">東京の企業に所属したままリモートワークを維持するコツ</span>
+                </div>
+                <div style="background: #f7fcfe; border: 1.5px solid var(--border-dashed); padding: 15px; border-radius: 12px; font-size: 0.88rem;">
+                    🏡 <strong>土地・住宅・費用感</strong><br><span style="color:#666;">100坪以上の土地選びと「断熱等級7」平屋のコスト実態</span>
+                </div>
+                <div style="background: #f7fcfe; border: 1.5px solid var(--border-dashed); padding: 15px; border-radius: 12px; font-size: 0.88rem;">
+                    👨‍👩‍👧‍👦 <strong>家族・パートナーの説得</strong><br><span style="color:#666;">妻や夫の不安を解消し、前向きに合意形成を進める方法</span>
+                </div>
+                <div style="background: #f7fcfe; border: 1.5px solid var(--border-dashed); padding: 15px; border-radius: 12px; font-size: 0.88rem;">
+                    🏫 <strong>子育て・教育環境</strong><br><span style="color:#666;">香川県内での学校選び、習い事、自然体験のリアル</span>
+                </div>
             </div>
 
-            <div style="margin-top: 20px; background: #eef8fc; border-left: 4px solid var(--sky-blue); padding: 15px; border-radius: 8px; font-size: 0.88rem; color: #555; line-height: 1.7;">
-                ℹ️ <strong>アドバイス：</strong> 補助金の給付条件や申請タイミング（移住前か移住後か）は市町や就業スタイル（フルリモート・転職）によって異なります。個別相談では、ご自身の状況に合わせた公的制度の活用アドバイスも行っています。
+            <div class="consultation-note">
+                💡 <strong>完全ボランティア（無料相談）の趣旨</strong><br>
+                「何から考えればいいかわからない」という段階でも全く問題ありません。営利目的ではなく、実際に移住をした個人の実体験をもとに、あなたの移住検討を一緒に整理するための場所です。
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- ⑧ 香川移住をもっと詳しく知る（カテゴリーナビ） -->
+        <section class="card">
+            <div class="section-header-blue">
+                <h2>テーマ別に詳しく調べる</h2>
+                <svg class="wave-line" viewBox="0 0 100 20"><path d="M0 10 Q25 0, 50 10 T100 10" fill="none" stroke="#ffffff" stroke-width="3"/></svg>
+            </div>
+            <p style="font-size: 0.9rem; color: #666; text-align: center;">関心のあるテーマをクリックすると、詳細な一次情報ガイドをご覧いただけます。</p>
+
+            <div class="category-grid">
+                <a href="comparison/" class="category-card">
+                    <div>
+                        <div class="category-icon">🔄</div>
+                        <div class="category-title">東京 vs 香川</div>
+                        <div class="category-desc">暮らしの違い20選・コストと生活ギャップの徹底検証</div>
+                    </div>
+                    <div style="font-size:0.8rem; font-weight:bold; color:var(--sky-blue-dark); margin-top:10px;">詳細を見る ↗</div>
+                </a>
+
+                <a href="real-experience/" class="category-card">
+                    <div>
+                        <div class="category-icon">💡</div>
+                        <div class="category-title">移住のリアル・盲点</div>
+                        <div class="category-desc">1年過ごして分かった「場所を変えても変わらないこと」</div>
+                    </div>
+                    <div style="font-size:0.8rem; font-weight:bold; color:var(--sky-blue-dark); margin-top:10px;">詳細を見る ↗</div>
+                </a>
+
+                <a href="work-style/" class="category-card">
+                    <div>
+                        <div class="category-icon">💻</div>
+                        <div class="category-title">仕事・年収・リモート</div>
+                        <div class="category-desc">東京企業の収入水準を維持したまま移住を実現する手法</div>
+                    </div>
+                    <div style="font-size:0.8rem; font-weight:bold; color:var(--sky-blue-dark); margin-top:10px;">詳細を見る ↗</div>
+                </a>
+
+                <a href="housing/" class="category-card">
+                    <div>
+                        <div class="category-icon">🏡</div>
+                        <div class="category-title">土地・住宅・お金</div>
+                        <div class="category-desc">100坪以上の土地探しと断熱等級7・高性能平屋の実例</div>
+                    </div>
+                    <div style="font-size:0.8rem; font-weight:bold; color:var(--sky-blue-dark); margin-top:10px;">詳細を見る ↗</div>
+                </a>
+
+                <a href="family-parenting/" class="category-card">
+                    <div>
+                        <div class="category-icon">👦</div>
+                        <div class="category-title">子育て・家族の合意</div>
+                        <div class="category-desc">教育環境、パートナーとの合意形成、自然豊かな暮らし</div>
+                    </div>
+                    <div style="font-size:0.8rem; font-weight:bold; color:var(--sky-blue-dark); margin-top:10px;">詳細を見る ↗</div>
+                </a>
+
+                <a href="subsidies/" class="category-card">
+                    <div>
+                        <div class="category-icon">🏛️</div>
+                        <div class="category-title">移住手続き・補助金</div>
+                        <div class="category-desc">香川県・各市町の100万円+α支援金＆公的制度まとめ</div>
+                    </div>
+                    <div style="font-size:0.8rem; font-weight:bold; color:var(--sky-blue-dark); margin-top:10px;">詳細を見る ↗</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ⑨ よくあるご質問（FAQ） -->
         <section class="card">
             <div class="section-header-blue">
                 <h2>よくあるご質問（FAQ）</h2>
@@ -573,40 +624,46 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-q"><span class="faq-q-badge">Q</span> 本当に東京の収入水準を維持したまま移住できますか？</div>
-                    <div class="faq-a">はい。フルリモートワークが可能な職種（IT、コンサル、事業会社の本部職種等）であれば、東京の企業に所属したまま香川へ移住することで年収を維持可能です。実際の転職・働き方の工夫についてもお伝えします。</div>
+                    <div class="faq-a">私の場合は、東京の企業でのフルリモート勤務を維持することで実現しました。ITやコンサル、本部職種など、リモートワークが可能な環境であれば年収を落とさずに移住することが可能です。</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q"><span class="faq-q-badge">Q</span> 100坪以上の土地や「断熱等級7」の家づくりは費用がかかりすぎませんか？</div>
-                    <div class="faq-a">香川県の郊外であれば土地価格が都内に比べて圧倒的に安いため、総額（土地＋断熱等級7の高性能住宅）で見ても、東京23区で狭小新築マンションを買う予算と同等以下に収まります。</div>
+                    <div class="faq-a">香川県の郊外であれば土地価格が都内に比べて圧倒的に安いため、総額（土地＋断熱等級7の高性能住宅）で見ても、東京23区で狭小新築マンションを買う予算と同等以下に収まりました。</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-q"><span class="faq-q-badge">Q</span> パートナー（妻・夫）の説得や合意形成はどうすればいいですか？</div>
-                    <div class="faq-a">最も多いご相談です。単に「地方に行く」のではなく、医療環境、教育、日々の買い物利便性、そして何より「住み心地の快適さ」を具体的なデータで共有することが成功の秘訣です。相談室ではそのアプローチも助言します。</div>
+                    <div class="faq-a">最も多いご相談です。単に「地方に行く」のではなく、医療環境、教育、日々の買い物利便性、そして何より「住み心地の快適さ」を具体的なデータで共有することが成功の秘訣です。</div>
                 </div>
             </div>
         </section>
 
-        <!-- note記事 -->
+        <!-- ⑩ 実体験を読む（note記事） -->
         <section class="card">
             <div class="section-header-blue">
-                <h2>40代からの生き方・移住リアル思考</h2>
+                <h2>実体験をもっと読む（note思考記録）</h2>
                 <svg class="wave-line" viewBox="0 0 100 20"><path d="M0 10 Q25 0, 50 10 T100 10" fill="none" stroke="#ffffff" stroke-width="3"/></svg>
             </div>
             <div class="note-grid" id="noteGrid"></div>
         </section>
 
-        <!-- 最下部CTAボタン -->
-        <button class="cta-btn" onclick="openModal()" style="margin-top: 20px; margin-bottom: 20px;">
-            実際に移住した体験を聞いてみる
-        </button>
+        <!-- ⑪ 最終CTA -->
+        <div style="text-align: center; margin: 40px 0 20px;">
+            <p style="font-weight: bold; font-size: 1.1rem; color: var(--ocean-navy); margin-bottom: 10px;">「自分の場合はどうなんだろう？」と思ったら
+            まずは一緒にお話ししながら整理しましょう！</p>
+            <button class="cta-btn" onclick="openModal()">無料オンライン相談を申し込む</button>
+        </div>
 
     </div><!-- /.container -->
 
     <footer>
         <p>&copy; 香川子育て移住相談室｜40代からの職住近接・理想の暮らし探求</p>
+        <!-- 改修：個別相談以外のお問い合わせリンク -->
+        <p style="margin-top: 10px; font-size: 0.85rem;">
+            <a href="javascript:void(0)" onclick="openGeneralContactModal()" style="color: #555; font-weight: 500;">個別相談以外のお問い合わせはこちら</a>
+        </p>
     </footer>
 
-    <!-- モーダルフォーム -->
+    <!-- ① 個別相談予約モーダルフォーム -->
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal-window">
             <button class="modal-close" onclick="closeModal()">&times;</button>
@@ -643,11 +700,50 @@
         </div>
     </div>
 
+    <!-- ② 改修追加：一般お問い合わせ専用モーダルフォーム（Formspree連携） -->
+    <div class="modal-overlay" id="generalContactModal">
+        <div class="modal-window">
+            <button class="modal-close" onclick="closeGeneralContactModal()">&times;</button>
+            <h3 style="color: var(--sky-blue-dark); margin-bottom: 6px; font-size: 1.35rem; text-align: center; font-weight: 900;">個別相談以外のお問い合わせ</h3>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px; text-align: center; line-height: 1.6;">
+                当サイトへのご質問、取材・メディア掲載のご依頼、お仕事のご相談などは、以下のフォームよりお気軽にお送りください。
+            </p>
+
+            <form action="https://formspree.io/f/xoeqlaoj" method="POST">
+                <div class="form-group">
+                    <label for="general_name">お名前 / 貴社名 <span style="color:red">*</span></label>
+                    <input type="text" id="general_name" name="お名前・貴社名" class="form-control" placeholder="例：山田 太郎" required>
+                </div>
+                <div class="form-group">
+                    <label for="general_email">メールアドレス <span style="color:red">*</span></label>
+                    <input type="email" id="general_email" name="replyto" class="form-control" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="general_category">お問い合わせ種別 <span style="color:red">*</span></label>
+                    <select id="general_category" name="お問い合わせ種別" class="form-control" required style="background:#fff;">
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="サイト内容・情報に関するご質問">サイト内容・情報に関するご質問</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="general_subject">件名 <span style="color:#718096; font-weight:normal;">[任意]</span></label>
+                    <input type="text" id="general_subject" name="件名" class="form-control" placeholder="例：取材のお問い合わせについて">
+                </div>
+                <div class="form-group">
+                    <label for="general_message">お問い合わせ内容 <span style="color:red">*</span></label>
+                    <textarea id="general_message" name="お問い合わせ内容" class="form-control" rows="4" required placeholder="具体的なお問い合わせ内容をご記入ください。"></textarea>
+                </div>
+                <button type="submit" class="cta-btn" style="margin-top:20px; width:100%; border:none;">送信する</button>
+            </form>
+        </div>
+    </div>
+
     <script>
         const noteArticles = [
-            { title: "【移住の記録】なぜ東京23区を離れて「香川県」を選んだのか", url: "https://note.com/from200_to_200/n/n8fc5b5b716f2", desc: "都会での子育て・住環境に限界を感じ、香川への移住を決断するに至った思考プロセス。", tag: "移住決断" },
-            { title: "40代からの生き方再設計：仕事と暮らしの主導権を取り戻す", url: "https://note.com/from200_to_200/n/n7e7b84a14494", desc: "東京での会社員生活から、フルリモート×地方移住で自分自身の人生を取り戻したアプローチ。", tag: "ライフスタイル" },
-            { title: "200坪の土地×高性能住宅：地方だから叶う圧倒的な住環境", url: "https://note.com/from200_to_200/n/n36bf112e0fc0", desc: "気密・断熱に妥協しない家づくりと、広大な土地で子どもたちが自由に育つ環境の実態。", tag: "家づくり・土地" }
+            { title: "【意思決定】なぜ東京23区を離れて「香川県」を選んだのか", url: "https://note.com/from200_to_200/n/n8fc5b5b716f2", desc: "都会での子育て・住環境に限界を感じ、香川への移住を決断するに至った思考プロセス。", tag: "移住を決めるまで" },
+            { title: "【失敗と気づき】「場所を変えるだけでは暮らしは変わらない」と気づいた話", url: "https://note.com/from200_to_200/n/n7e7b84a14494", desc: "東京からの移住1年目に直面した盲点と、消費する暮らしから耕す暮らしへの意識改革。", tag: "移住して1年" },
+            { title: "【具体化】200坪の土地×高性能住宅：地方だから叶う圧倒的な住環境", url: "https://note.com/from200_to_200/n/n36bf112e0fc0", desc: "気密・断熱に妥協しない家づくりと、広大な土地で子どもたちが自由に育つ環境の実態。", tag: "土地・家づくり" }
         ];
 
         const noteGrid = document.getElementById('noteGrid');
@@ -674,17 +770,21 @@
             if (count === 0) {
                 adviceText.innerHTML = "チェック項目を選択してください。選択の組み合わせに応じたアドバイスが表示されます。";
             } else if (count <= 2) {
-                adviceText.innerHTML = "<strong>【適性度 20〜40%：関心期】</strong><br>地方暮らしへの興味が芽生え始めた段階です。まずは「仕事のフルリモート可否」や「家族の希望」を整理することから始めましょう。";
+                adviceText.innerHTML = "<strong>【相性度 20〜40%：まずは情報収集】</strong><br>地方暮らしへの興味が芽生え始めた段階です。まずは「仕事のフルリモート可否」や「ご家族の希望」を整理することから始めましょう。";
             } else if (count <= 4) {
-                adviceText.innerHTML = "<strong>【適性度 60〜80%：非常に高い】</strong><br>香川移住のメリットを最大限享受できる条件が揃っています。現実的な住宅コストや移住ステップについて相談してみるのがおすすめです。";
+                adviceText.innerHTML = "<strong>【相性度 60〜80%：非常に高い相性】</strong><br>香川移住のメリットを大きく享受できる条件が揃っています。次に確認すべきは「実際の土地・住宅コスト」と「パートナーとの合意形成」です。";
             } else {
-                adviceText.innerHTML = "<strong>【適性度 100%：最高のベストマッチ！】</strong><br>香川県での『職住近接・100坪以上高性能住宅ライフ』に完璧に適合しています。東京での住環境や子育ての限界を突破し、人生の質を激変させられる可能性が極めて高いです。";
+                adviceText.innerHTML = "<strong>【相性度 100%：ベストマッチ！】</strong><br>香川県での『職住近接・100坪以上高性能住宅ライフ』に完璧に適合しています。東京での住環境や子育ての限界を突破し、人生の質を激変させられる可能性が極めて高いです。";
             }
         }
         checkboxes.forEach(cb => cb.addEventListener('change', updateDiagnosis));
 
+        /* モーダル操作用関数 */
         function openModal() { document.getElementById('modalOverlay').classList.add('active'); }
         function closeModal() { document.getElementById('modalOverlay').classList.remove('active'); }
+
+        function openGeneralContactModal() { document.getElementById('generalContactModal').classList.add('active'); }
+        function closeGeneralContactModal() { document.getElementById('generalContactModal').classList.remove('active'); }
 
         function toggleChip(el) {
             el.classList.toggle('active');
