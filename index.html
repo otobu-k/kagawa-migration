@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>東京23区から香川へ｜40代からの職住近接・子育て移住相談室</title>
-    <meta name="description" content="都心で子育てに励む30〜40代・世帯年収800万円以上のファミリーへ。200坪×断熱等級7の平屋×香川移住を果たした経験者が明かすリアルな暮らし。">
+    <meta name="description" content="都心で子育てに励む30〜40代・世帯年収800万円以上のファミリーへ。100坪以上×断熱等級7の平屋×香川移住を果たした経験者が明かすリアルな暮らし。">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
         {
           "@type": "WebSite",
           "name": "香川子育て移住相談室",
-          "description": "東京からの移住経験者が語る、200坪×断熱等級7×フルリモートの香川移住"
+          "description": "東京からの移住経験者が語る、100坪以上×断熱等級7×フルリモートの香川移住"
         },
         {
           "@type": "FAQPage",
@@ -86,7 +86,6 @@
         }
         .hero-wave .shape-fill { fill: var(--sky-blue-light); }
 
-        /* 2. ターゲット層へ語りかける表現に改修 */
         .hero-badge {
             display: inline-block;
             background: #fff;
@@ -206,7 +205,7 @@
             font-weight: 700;
         }
 
-        /* 1. 対比テーブル（文字を上下左右の中央揃えに修正） */
+        /* 対比テーブル */
         .table-wrapper {
             overflow-x: auto;
             margin-top: 15px;
@@ -217,22 +216,22 @@
         .compare-table th, .compare-table td { 
             padding: 16px 18px; 
             border-bottom: 1px solid var(--border-dashed);
-            vertical-align: middle; /* 上下中央揃え */
+            vertical-align: middle;
         }
         .compare-table th { 
             background-color: #f0f9fc; 
             color: var(--ocean-navy); 
             font-weight: 700; 
             white-space: nowrap; 
-            text-align: center; /* 左右中央揃え */
+            text-align: center;
         }
         .compare-table th.kagawa-header { 
             background-color: var(--sky-blue); 
             color: #fff; 
-            text-align: center; /* 左右中央揃え */
+            text-align: center;
         }
         .compare-table td:first-child {
-            text-align: center; /* 「比較項目」の列を中央揃え */
+            text-align: center;
         }
         .compare-table td.tokyo-col { background-color: #ffffff; color: #666; width: 40%; text-align: left; }
         .compare-table td.kagawa-col { background-color: #eef8fc; color: var(--sky-blue-dark); font-weight: 700; width: 40%; text-align: left; }
@@ -254,6 +253,18 @@
         .gauge-bar-bg { background: #d0ebf7; height: 12px; border-radius: 6px; overflow: hidden; margin: 12px auto 20px; max-width: 400px; }
         .gauge-bar-fill { background: linear-gradient(90deg, #56ccf2, var(--sky-blue)); height: 100%; width: 0%; transition: width 0.5s ease-out; }
         .advice-box { text-align: left; background: #ffffff; padding: 18px; border-radius: 10px; font-size: 0.95rem; border-left: 5px solid var(--sky-blue); }
+
+        .consultation-note {
+            margin-top: 25px;
+            background: #ffffff;
+            border: 1.5px dashed var(--sky-blue);
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.8;
+            text-align: left;
+        }
 
         /* FAQ */
         .faq-list { display: grid; gap: 16px; }
@@ -317,15 +328,14 @@
 
     <!-- ヒーローセクション -->
     <header class="hero">
-        <!-- ターゲットへの問いかけ・訴求表現へ改修 -->
         <span class="hero-badge">都心で子育てに励む、30〜40代・世帯年収800万円以上のあなたへ</span>
         <h1>東京での子育てと住まいに限界を感じたら。<br>40代からの「香川・職住近接ライフ」</h1>
         <p class="hero-sub">
-            <span class="inline-block-text">フルリモート勤務を活かし、</span><span class="inline-block-text">200坪の土地と気密・断熱にこだわった高性能住宅を獲得。</span><br>
+            <span class="inline-block-text">フルリモート勤務を活かし、</span><span class="inline-block-text">100坪以上の土地と気密・断熱にこだわった高性能住宅を獲得。</span><br>
             <span class="inline-block-text">現実的な「家族の豊かな生き方」を叶えた</span><span class="inline-block-text">実体験相談室。</span>
         </p>
         <div class="hero-tags">
-            <span class="hero-tag">🌲 200坪の広大な敷地</span>
+            <span class="hero-tag">🌲 100坪以上の広大な敷地</span>
             <span class="hero-tag">🏡 断熱等級7の快適住宅</span>
             <span class="hero-tag">💻 完全フルリモート維持</span>
             <span class="hero-tag">👦 伸び伸び自然派子育て</span>
@@ -378,7 +388,7 @@
                         <tr>
                             <td><strong>土地・居住空間</strong></td>
                             <td class="tokyo-col">坪単価が高く狭小。隣家と密接し、プライベートな余白がない</td>
-                            <td class="kagawa-col">200坪の広大な敷地。平屋でゆったりとした開放感と深い軒のある空間</td>
+                            <td class="kagawa-col">100坪以上の広大な敷地。平屋でゆったりとした開放感と深い軒のある空間</td>
                         </tr>
                         <tr>
                             <td><strong>住宅の性能・環境</strong></td>
@@ -392,13 +402,13 @@
                         </tr>
                         <tr>
                             <td><strong>ライフスタイル</strong></td>
-                            <td class="tokyo-col">組織に依存し、給料を消費するためだけに追われる「都市の養分」</td>
-                            <td class="kagawa-col">自宅の家庭菜園や自然と隣り合わせ。自分の人生の主導権を取り戻した自律生活</td>
+                            <td class="tokyo-col">「どこへ行く？」と探す、消費型の暮らし</td>
+                            <td class="kagawa-col">「何をしよう？」を自分たちで生み出す暮らし</td>
                         </tr>
                         <tr>
                             <td><strong>メンタル・時間</strong></td>
-                            <td class="tokyo-col">常にタスクと他人の評価に追われ、脳と身体の「余白」がない</td>
-                            <td class="kagawa-col">AIと住環境の最適化により、思考と時間に圧倒的な余白が生まれる</td>
+                            <td class="tokyo-col">仕事とキャリアを優先し、自分の時間が後回しになる</td>
+                            <td class="kagawa-col">仕事を維持しながら、自分と家族の時間を取り戻す(挑戦中)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -430,6 +440,11 @@
                 <div class="advice-box" id="adviceText">チェック項目を選択してください。選択の組み合わせに応じたアドバイスが表示されます。</div>
             </div>
 
+            <div class="consultation-note">
+                💡 <strong>無料オンライン相談について</strong><br>
+                「香川へ移住したいけれど、何から考えればいいかわからない」という段階でも大丈夫です。住まい・土地・仕事・子育て・家族の合意など、気になることを何でもお聞かせください。実体験をもとに、一緒に整理いたします。少しでも自分の経験を、誰かの役に立てて頂くための無料相談(ボランティア)です。売り込み行為などは一切ありません。
+            </div>
+
             <button class="cta-btn" onclick="openModal()">無料の個別オンライン相談を予約する</button>
         </section>
 
@@ -445,7 +460,7 @@
                     <div class="faq-a">はい。フルリモートワークが可能な職種（IT、コンサル、事業会社の本部職種等）であれば、東京の企業に所属したまま香川へ移住することで年収を維持可能です。実際の転職・働き方の工夫についてもお伝えします。</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-q"><span class="faq-q-badge">Q</span> 200坪の土地や「断熱等級7」の家づくりは費用がかかりすぎませんか？</div>
+                    <div class="faq-q"><span class="faq-q-badge">Q</span> 100坪以上の土地や「断熱等級7」の家づくりは費用がかかりすぎませんか？</div>
                     <div class="faq-a">香川県の郊外であれば土地価格が都内に比べて圧倒的に安いため、総額（土地＋断熱等級7の高性能住宅）で見ても、東京23区で狭小新築マンションを買う予算と同等以下に収まります。</div>
                 </div>
                 <div class="faq-item">
@@ -471,7 +486,9 @@
         <div class="modal-window">
             <button class="modal-close" onclick="closeModal()">&times;</button>
             <h3 style="color: var(--sky-blue-dark); margin-bottom: 6px; font-size: 1.35rem; text-align: center; font-weight: 900;">無料オンライン移住相談予約</h3>
-            <p style="font-size: 0.85rem; color: #666; margin-bottom: 20px; text-align: center;">入力は1分で完了します（売り込み等は一切ありません）</p>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px; text-align: center; line-height: 1.6;">
+                「何から考えればいいかわからない」段階でも大丈夫です。実体験をもとに一緒に整理いたします。（完全ボランティアのため売り込み等は一切ありません）
+            </p>
 
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
                 <div class="form-group">
@@ -485,7 +502,7 @@
                 <div class="form-group">
                     <label>一番気になっていること（選択可）</label>
                     <div class="chip-group" id="chipGroup">
-                        <span class="chip" onclick="toggleChip(this)">200坪住宅の費用感</span>
+                        <span class="chip" onclick="toggleChip(this)">100坪以上住宅の費用感</span>
                         <span class="chip" onclick="toggleChip(this)">リモートワークの維持</span>
                         <span class="chip" onclick="toggleChip(this)">家族・妻の合意形成</span>
                         <span class="chip" onclick="toggleChip(this)">香川の教育・子育て環境</span>
@@ -540,7 +557,7 @@
             } else if (count <= 4) {
                 adviceText.innerHTML = "<strong>【適性度 60〜80%：非常に高い】</strong><br>香川移住のメリットを最大限享受できる条件が揃っています。現実的な住宅コストや移住ステップについて相談してみるのがおすすめです。";
             } else {
-                adviceText.innerHTML = "<strong>【適性度 100%：最高のベストマッチ！】</strong><br>香川県での『職住近接・200坪高性能住宅ライフ』に完璧に適合しています。東京での住環境や子育ての限界を突破し、人生の質を激変させられる可能性が極めて高いです。";
+                adviceText.innerHTML = "<strong>【適性度 100%：最高のベストマッチ！】</strong><br>香川県での『職住近接・100坪以上高性能住宅ライフ』に完璧に適合しています。東京での住環境や子育ての限界を突破し、人生の質を激変させられる可能性が極めて高いです。";
             }
         }
         checkboxes.forEach(cb => cb.addEventListener('change', updateDiagnosis));
